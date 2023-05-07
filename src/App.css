@@ -20,38 +20,48 @@ h4 {
 @media (min-width: 1440px) {
 	/* Nav styles for desktop */
 }
+
+.nav {
+	display: grid;
+	grid-template-rows: 70px 1fr;
+}
+
 .menu-item:nth-of-type(8) {
 	border-bottom: 0;
 }
 .Mercury-color {
 	margin-right: 25px;
-	background-color: #DEF4FC;
+	background-color: #def4fc;
 }
 .Venus-color {
 	margin-right: 25px;
-	background-color: #F7CC7F;
+	background-color: #f7cc7f;
 }
 .Earth-color {
 	margin-right: 25px;
-	background-color: #545BFE;
+	background-color: #545bfe;
 }
 .Mars-color {
 	margin-right: 25px;
-	background-color: #FF6A45;
+	background-color: #ff6a45;
 }
 .Jupiter-color {
 	margin-right: 25px;
-	background-color: #ECAD7A;
+	background-color: #ecad7a;
 }
 .Saturn-color {
 	margin-right: 25px;
-	background-color: #FCCB6B;
+	background-color: #fccb6b;
 }
 .Uranus-color {
 	margin-right: 25px;
-	background-color: #65F0D5;
+	background-color: #65f0d5;
 }
 .Neptune-color {
 	margin-right: 25px;
-	background-color: #497EFA;
+	background-color: #497efa;
 }
+
+
+
+/* DEMO CODE */
