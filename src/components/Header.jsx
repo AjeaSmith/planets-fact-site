@@ -8,7 +8,7 @@ const Header = () => {
 		setIsMenuOpen(!isMenuOpen);
 	};
 	return (
-		<header className="flex flex-col md:items-center md:border-b md:border-b-slate-800">
+		<header className="flex flex-col md:items-center md:border-b md:border-b-slate-800 lg:flex-row lg:justify-between">
 			<div className="border-b border-b-slate-800 md:mr-5 md:border-none">
 				<div className="flex items-center justify-between px-6 pt-4 pb-[17px] w-full">
 					<p className="text-[28px] uppercase font-normal font-['Antonio']">
@@ -35,7 +35,7 @@ const Header = () => {
 				</div>
 			</div>
 			<nav
-				className="bg-blueBlack flex items-center px-6 mt-[22px] md:w-full md:justify-between md:mt-0 md:px-0"
+				className="bg-blueBlack flex items-center px-6 mt-[22px] md:w-full md:justify-between md:mt-0 md:px-0 lg:w-fit"
 				aria-label="Site Navigation"
 			>
 				<ul
@@ -48,7 +48,7 @@ const Header = () => {
 						return (
 							<li
 								key={planet.name}
-								className="menu-item flex justify-between font-bold text-[15px] uppercase tracking-[1.36px] py-5 grow basis-0 border-b border-slate-800 md:grow-0 md:border-b-0"
+								className="menu-item flex justify-between font-bold text-[15px] uppercase tracking-[1.36px] py-5 grow basis-0 border-b border-slate-800 md:text-H4 md:opacity-75 md:grow-0 md:border-b-0 lg:mr-[33px] lg:hover:opacity-100 lg:hover:border-t-4 lg:hover:border-red"
 							>
 								<div className="flex">
 									<div

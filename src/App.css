@@ -13,19 +13,6 @@ h4 {
 	font-family: "League Spartan", sans-serif;
 }
 
-@media (min-width: 768px) {
-	/* Nav styles for tablet */
-}
-
-@media (min-width: 1440px) {
-	/* Nav styles for desktop */
-}
-
-.nav {
-	display: grid;
-	grid-template-rows: 70px 1fr;
-}
-
 .menu-item:nth-of-type(8) {
 	border-bottom: 0;
 }
@@ -61,7 +48,3 @@ h4 {
 	margin-right: 25px;
 	background-color: #497efa;
 }
-
-
-
-/* DEMO CODE */
