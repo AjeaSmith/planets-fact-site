@@ -1,15 +1,20 @@
 [
   {
+    "id": 0,
     "name": "Mercury",
+    "color": "#419EBB", 
     "overview": {
+      "id": 0,
       "content": "Mercury is the smallest planet in the Solar System and the closest to the Sun. Its orbit around the Sun takes 87.97 Earth days, the shortest of all the Sun's planets. Mercury is one of four terrestrial planets in the Solar System, and is a rocky body like Earth.",
       "source": "https://en.wikipedia.org/wiki/Mercury_(planet)"
     },
     "structure": {
+      "id": 1,
       "content": "Mercury appears to have a solid silicate crust and mantle overlying a solid, iron sulfide outer core layer, a deeper liquid core layer, and a solid inner core. The planet's density is the second highest in the Solar System at 5.427 g/cm3 , only slightly less than Earth's density.",
       "source": "https://en.wikipedia.org/wiki/Mercury_(planet)#Internal_structure"
     },
     "geology": {
+      "id": 2,
       "content": "Mercury's surface is similar in appearance to that of the Moon, showing extensive mare-like plains and heavy cratering, indicating that it has been geologically inactive for billions of years. It is more heterogeneous than either Mars's or the Moon’s.",
       "source": "https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology"
     },
@@ -24,7 +29,9 @@
     }
   },
   {
+    "id": 1,
     "name": "Venus",
+    "color": "#eda249", 
     "overview": {
       "content": "Venus is the second planet from the Sun. It is named after the Roman goddess of love and beauty. As the brightest natural object in Earth's night sky after the Moon, Venus can cast shadows and can be, on rare occasions, visible to the naked eye in broad daylight.",
       "source": "https://en.wikipedia.org/wiki/Venus"
@@ -49,6 +56,7 @@
   },
   {
     "name": "Earth",
+    "color": "#6D2ED5",
     "overview": {
       "content": "Third planet from the Sun and the only known planet to harbor life. About 29.2% of Earth's surface is land with remaining 70.8% is covered with water. Earth's distance from the Sun, physical properties and geological history have allowed life to evolve and thrive.",
       "source": "https://en.wikipedia.org/wiki/Earth"
@@ -73,6 +81,7 @@
   },
   {
     "name": "Mars",
+    "color": "#D14C32",
     "overview": {
       "content": "Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, being larger than only Mercury. In English, Mars carries the name of the Roman god of war and is often referred to as the \"Red Planet\".",
       "source": "https://en.wikipedia.org/wiki/Mars"

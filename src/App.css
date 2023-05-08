@@ -13,6 +13,10 @@ h4 {
 	font-family: "League Spartan", sans-serif;
 }
 
+@media (min-width: 768px) {
+	/* Nav styles for tablet */
+}
+
 .menu-item:nth-of-type(8) {
 	border-bottom: 0;
 }
@@ -47,4 +51,33 @@ h4 {
 .Neptune-color {
 	margin-right: 25px;
 	background-color: #497efa;
+}
+
+/* Custom MEDIA QUEIRES */
+@media (min-width: 1439px) {
+	/* Nav styles for desktop */
+	.menu-item:nth-of-type(1):hover {
+		border-top: 4px solid #419EBB;
+	}
+	.menu-item:nth-of-type(2):hover {
+		border-top: 4px solid #EDA249;
+	}
+	.menu-item:nth-of-type(3):hover {
+		border-top: 4px solid #6D2ED5;
+	}
+	.menu-item:nth-of-type(4):hover {
+		border-top: 4px solid #D14C32;
+	}
+	.menu-item:nth-of-type(5):hover {
+		border-top: 4px solid #D83A34;
+	}
+	.menu-item:nth-of-type(6):hover {
+		border-top: 4px solid #CD5120;
+	}
+	.menu-item:nth-of-type(7):hover {
+		border-top: 4px solid #1EC1A2;
+	}
+	.menu-item:nth-of-type(8):hover {
+		border-top: 4px solid #2D68F0;
+	}
 }
