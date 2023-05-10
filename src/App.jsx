@@ -1,7 +1,8 @@
 import "./App.css";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from "./Home";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
+import PlanetPage from "./PlanetPage";
+import Home from "./Home";
 
 function App() {
 	return (
@@ -9,7 +10,8 @@ function App() {
 			<Router>
 				<Header />
 				<Routes>
-					<Route path="/fact" element={<Home />} />
+					<Route path="/" element={<Home />} />
+					<Route path="/:name" element={<PlanetPage />} />
 				</Routes>
 			</Router>
 		</>

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import iconChevron from "../assets/icon-chevron.svg";
+import iconChevron from "/assets/icon-chevron.svg";
 import data from "../data.json";
 const Header = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -9,7 +9,7 @@ const Header = () => {
 		setIsMenuOpen(!isMenuOpen);
 	};
 	return (
-		<header className="flex flex-col md:items-center md:border-b md:border-b-slate-800 lg:flex-row lg:justify-between mb-3">
+		<header className="flex flex-col md:items-center md:border-b md:border-b-slate-800 lg:flex-row lg:justify-between">
 			<div className="border-b border-b-slate-800 md:border-none">
 				<div className="flex items-center justify-between px-6 pt-4 pb-[17px] w-full">
 					<p className="text-[28px] uppercase font-normal font-['Antonio']">
@@ -55,13 +55,10 @@ const Header = () => {
 							>
 								<div className="flex">
 									<div
-										className={`w-5 h-5 ${planet.name}-color rounded-full mr-6 md:hidden`}
+										className={`w-5 h-5 ${planet.name}-color rounded-full mr-[25px] md:hidden`}
 									></div>
 									<Link
-										to={{
-											pathname: "/fact/",
-											search: `?name=${planet.name}`, // inject code value into template
-										}}
+										to={`/${planet.name}`}
 										className="block md:inline-block"
 									>
 										{planet.name}

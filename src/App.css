@@ -7,77 +7,96 @@ body {
 h1,
 h2 {
 	font-family: "Antonio", sans-serif;
+	text-transform: uppercase;
 }
 h3,
 h4 {
 	font-family: "League Spartan", sans-serif;
 }
 
-@media (min-width: 768px) {
-	/* Nav styles for tablet */
+.planet-grid {
+	display: grid;
+	grid-template-rows: 50px auto auto auto;
 }
 
 .menu-item:nth-of-type(8) {
 	border-bottom: 0;
 }
 .Mercury-color {
-	margin-right: 25px;
 	background-color: #def4fc;
 }
 .Venus-color {
-	margin-right: 25px;
 	background-color: #f7cc7f;
 }
 .Earth-color {
-	margin-right: 25px;
 	background-color: #545bfe;
 }
 .Mars-color {
-	margin-right: 25px;
 	background-color: #ff6a45;
 }
 .Jupiter-color {
-	margin-right: 25px;
 	background-color: #ecad7a;
 }
 .Saturn-color {
-	margin-right: 25px;
 	background-color: #fccb6b;
 }
 .Uranus-color {
-	margin-right: 25px;
 	background-color: #65f0d5;
 }
 .Neptune-color {
-	margin-right: 25px;
 	background-color: #497efa;
+}
+/* -------------------------------- */
+.Mercury-border {
+	border-color: #419ebb;
+}
+.Venus-border {
+	border-color: #eda249;
+}
+.Earth-border {
+	border-color: #6d2ed5;
+}
+.Mars-border {
+	border-color: #d14c32;
+}
+.Jupiter-border {
+	border-color: #d83a34;
+}
+.Saturn-border {
+	border-color: #cd5120;
+}
+.Uranus-border {
+	border-color: #1ec1a2;
+}
+.Neptune-border {
+	border-color: #2d68f0;
 }
 
 /* Custom MEDIA QUEIRES */
 @media (min-width: 1439px) {
 	/* Nav styles for desktop */
 	.menu-item:nth-of-type(1):hover {
-		border-top: 4px solid #419EBB;
+		border-top: 4px solid #419ebb;
 	}
 	.menu-item:nth-of-type(2):hover {
-		border-top: 4px solid #EDA249;
+		border-top: 4px solid #eda249;
 	}
 	.menu-item:nth-of-type(3):hover {
-		border-top: 4px solid #6D2ED5;
+		border-top: 4px solid #6d2ed5;
 	}
 	.menu-item:nth-of-type(4):hover {
-		border-top: 4px solid #D14C32;
+		border-top: 4px solid #d14c32;
 	}
 	.menu-item:nth-of-type(5):hover {
-		border-top: 4px solid #D83A34;
+		border-top: 4px solid #d83a34;
 	}
 	.menu-item:nth-of-type(6):hover {
-		border-top: 4px solid #CD5120;
+		border-top: 4px solid #cd5120;
 	}
 	.menu-item:nth-of-type(7):hover {
-		border-top: 4px solid #1EC1A2;
+		border-top: 4px solid #1ec1a2;
 	}
 	.menu-item:nth-of-type(8):hover {
-		border-top: 4px solid #2D68F0;
+		border-top: 4px solid #2d68f0;
 	}
 }

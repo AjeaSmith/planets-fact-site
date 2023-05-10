@@ -19,6 +19,13 @@ export default {
         lineHeight: '25px',
         letterSpacing: '1'
       }],
+      H5: ['20px', {
+        lineHeight: "25.88px",
+        letterSpacing: -0.75
+      }],
+      SB: ['14px', {
+        lineHeight: '22px'
+      }]
     },
     extend: {
       colors: {
