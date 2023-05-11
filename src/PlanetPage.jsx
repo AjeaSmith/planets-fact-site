@@ -13,13 +13,13 @@ const PlanetPage = () => {
 			{filteredPlanets.map((d) => {
 				return (
 					<section key={d.name}>
-						<div className="planet-grid">
+						<div className="planet-grid md:grid-cols-2">
 							<TabMenu
 								name={name}
 								activeTab={activeTab}
 								setActiveTab={setActiveTab}
 							/>
-							<div className="flex">
+							<div className="flex md:col-span-3">
 								<div className="w-[111px] mx-auto my-20">
 									<img
 										src={d.images.planet}
@@ -27,7 +27,7 @@ const PlanetPage = () => {
 									/>
 								</div>
 							</div>
-							<div key={d.name}>
+							<div key={d.name} className="mb-7 md:row-start-2 md:mb-0">
 								<div
 									id="tab-content-0"
 									role="tabpanel"
@@ -35,19 +35,19 @@ const PlanetPage = () => {
 									tabIndex={activeTab === 0 ? "0" : "-1"}
 									className={`text-center px-6 ${
 										activeTab === 0 ? "block" : "hidden"
-									}`}
+									} md:text-left`}
 								>
-									<h2 className="w-full text-H2 text-center mb-4 font-normal">
+									<h2 className="w-full text-H2 text-center mb-4 font-normal md:text-left">
 										{name}
 									</h2>
 									<p className="mb-8 text-SB font-normal">
 										{d.overview.content}
 									</p>
-									<p>
+									<p className="text-white/50">
 										Source :{" "}
 										<a
 											href={d.overview.source}
-											className="underline"
+											className="underline font-bold"
 										>
 											Wikipedia
 										</a>
@@ -68,11 +68,11 @@ const PlanetPage = () => {
 									<p className="mb-8 text-SB font-normal">
 										{d.structure.content}
 									</p>
-									<p>
+									<p className="text-white/50">
 										Source :{" "}
 										<a
 											href={d.structure.source}
-											className="underline"
+											className="underline font-bold"
 										>
 											Wikipedia
 										</a>
@@ -93,18 +93,18 @@ const PlanetPage = () => {
 									<p className="mb-8 text-SB font-normal">
 										{d.geology.content}
 									</p>
-									<p>
+									<p className="text-white/50">
 										Source :{" "}
 										<a
 											href={d.geology.source}
-											className="underline"
+											className="underline font-bold"
 										>
 											Wikipedia
 										</a>
 									</p>
 								</div>
 							</div>
-							<div className="grid gap-2 uppercase px-6">
+							<div className="grid gap-2 uppercase px-6 mb-6 md:row-start-3 md:col-span-3">
 								<div className="flex justify-between border border-slate-800 p-4 items-center">
 									<p className="text-[8px] font-bold text-white/50 tracking-[0.73px]">
 										Rotation Time

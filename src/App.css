@@ -16,6 +16,7 @@ h4 {
 
 .planet-grid {
 	display: grid;
+	grid-template-columns: 1fr;
 	grid-template-rows: 50px auto auto auto;
 }
 
@@ -73,6 +74,12 @@ h4 {
 }
 
 /* Custom MEDIA QUEIRES */
+@media (min-width: 767px) {
+	.planet-grid {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+	}
+}
 @media (min-width: 1439px) {
 	/* Nav styles for desktop */
 	.menu-item:nth-of-type(1):hover {

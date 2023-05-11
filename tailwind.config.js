@@ -33,7 +33,7 @@ export default {
         'blueBlack': '#070724',
         'darkGray': '#38384F',
         'gray': '#838391',
-        'skyBlue': '#419EBB',
+        'mercury': '#419EBB',
         'lightOrange': '#EDA249',
         'purple': '#6f2ed6',
         'orange': '#D14C32',
