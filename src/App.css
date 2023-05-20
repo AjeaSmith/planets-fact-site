@@ -77,8 +77,33 @@ h4 {
 @media (min-width: 767px) {
 	.planet-grid {
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
 	}
+	.Mercury-bg {
+		background-color: #419ebb;
+	}
+	.Venus-bg {
+		background-color: #eda249;
+	}
+	.Earth-bg {
+		background-color: #6d2ed5;
+	}
+	.Mars-bg {
+		background-color: #d14c32;
+	}
+	.Jupiter-bg {
+		background-color: #d83a34;
+	}
+	.Saturn-bg {
+		background-color: #cd5120;
+	}
+	.Uranus-bg {
+		background-color: #1ec1a2;
+	}
+	.Neptune-bg {
+		background-color: #2d68f0;
+	}
+
 }
 @media (min-width: 1439px) {
 	/* Nav styles for desktop */

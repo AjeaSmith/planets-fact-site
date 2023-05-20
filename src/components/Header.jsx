@@ -38,20 +38,22 @@ const Header = () => {
 			<nav
 				className={`flex items-center px-6 ${
 					isMenuOpen ? "h-[90vh]" : ""
-				} md:h-auto md:w-full md:justify-between md:pt-0 md:px-0 lg:w-fit`}
+				} md:h-auto md:w-full md:justify-between md:pt-0 md:px-[39px] lg:w-fit`}
 				aria-label="Site Navigation"
 			>
 				<ul
 					className={`w-full ${
 						isMenuOpen ? "flex flex-col h-[80vh]" : "hidden"
-					} md:h-auto md:flex md:flex-row md:justify-evenly`}
+					} md:h-auto md:flex md:flex-row md:justify-between md:text-white/75`}
 					role="list"
 				>
 					{data.map((planet) => {
 						return (
 							<li
+								onClick={() => setIsMenuOpen(false)}
 								key={planet.name}
-								className="menu-item flex items-center justify-between font-bold text-[15px] uppercase tracking-[1.36px] py-5 grow basis-0 border-b border-slate-800 md:text-H4 md:grow-0 md:border-b-0 lg:opacity-75 lg:hover:opacity-100 lg:mr-[33px]"
+								className="menu-item flex items-center justify-between font-bold text-[15px] uppercase tracking-[1.36px] py-5 grow basis-0 
+								border-b border-slate-800 md:text-H4 md:grow-0 md:border-b-0 lg:opacity-75 lg:hover:opacity-100 lg:mr-[33px]"
 							>
 								<div className="flex">
 									<div
