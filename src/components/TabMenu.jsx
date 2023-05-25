@@ -14,8 +14,8 @@ const TabMenu = ({ name, activeTab, setActiveTab }) => {
 					className={`uppercase font-bold tracking-[1.93px] inline-block ${
 						activeTab === 0
 							? `border-b-4 ${name}-border text-white md:border-none ${name}-bg`
-							: "text-white/75 md:border md:border-slate-700"
-					} py-3 focus:outline-none md:flex md:px-5 md:items-center`}
+							: "text-white/75 md:border md:border-slate-700 md:hover:bg-[#d8d8d8]/20"
+					} py-3 focus:outline-none md:flex md:px-5 md:items-center `}
 					onClick={() => handleClick(0)}
 					aria-selected={activeTab === 0 ? "true" : "false"}
 					aria-controls="tab-content-0"
@@ -32,7 +32,7 @@ const TabMenu = ({ name, activeTab, setActiveTab }) => {
 					className={`uppercase font-bold tracking-[1.93px] inline-block ${
 						activeTab === 1
 							? `border-b-4 ${name}-border text-white ${name}-bg`
-							: "text-white/75 md:border md:border-slate-700"
+							: "text-white/75 md:border md:border-slate-700 md:hover:bg-[#d8d8d8]/20"
 					} py-3 focus:outline-none md:flex md:my-4 md:items-center md:px-5`}
 					onClick={() => handleClick(1)}
 					aria-selected={activeTab === 1 ? "true" : "false"}
@@ -50,7 +50,7 @@ const TabMenu = ({ name, activeTab, setActiveTab }) => {
 					className={`uppercase font-bold tracking-[1.93px] inline-block ${
 						activeTab === 2
 							? `border-b-4 ${name}-border text-white ${name}-bg`
-							: "text-white/75 md:border md:border-slate-700"
+							: "text-white/75 md:border md:border-slate-700 md:hover:bg-[#d8d8d8]/20"
 					} py-3 focus:outline-none md:flex md:items-center md:px-5`}
 					onClick={() => handleClick(2)}
 					aria-selected={activeTab === 2 ? "true" : "false"}

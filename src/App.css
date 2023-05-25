@@ -77,7 +77,8 @@ h4 {
 @media (min-width: 767px) {
 	.planet-grid {
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr 1fr;
+		grid-template-rows: auto;
+		row-gap: 90px;
 	}
 	.Mercury-bg {
 		background-color: #419ebb;

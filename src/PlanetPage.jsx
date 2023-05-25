@@ -19,15 +19,35 @@ const PlanetPage = () => {
 								activeTab={activeTab}
 								setActiveTab={setActiveTab}
 							/>
-							<div className="flex md:col-span-3">
-								<div className="w-[111px] mx-auto my-20">
-									<img
-										src={d.images.planet}
-										alt={d.images.planet}
-									/>
+							<div className="flex md:col-span-3 pt-10">
+								<div className="mx-auto">
+									{activeTab === 0 && (
+										<img
+											src={d.images.planet}
+											className="w-[184px]"
+										/>
+									)}
+									{activeTab === 1 && (
+										<img src={d.images.internal} />
+									)}
+									{activeTab === 2 && (
+										<div className="relative ">
+											<img
+												src={d.images.planet}
+												className="w-[290px]"
+											/>
+											<img
+												src={d.images.geology}
+												className="w-[150px] absolute top-44 left-16"
+											/>
+										</div>
+									)}
 								</div>
 							</div>
-							<div key={d.name} className="mb-7 px-6 md:row-start-2 md:mb-0 md:px-[39px]">
+							<div
+								key={d.name}
+								className="mb-7 px-6 md:row-start-2 md:mb-0 md:px-[39px]"
+							>
 								<div
 									id="tab-content-0"
 									role="tabpanel"
@@ -104,10 +124,14 @@ const PlanetPage = () => {
 									</p>
 								</div>
 							</div>
-							<div className="grid gap-2 uppercase px-6 md:row-start-3 md:col-span-3 
-							md:px-[39px] md:grid-cols-4 md:h-fit">
-								<div className="flex justify-between border border-slate-800 p-4 items-center 
-								md:flex-col md:justify-normal md:items-start md:mr-[11px]">
+							<div
+								className="grid gap-2 uppercase px-6 md:row-start-3 md:col-span-3 
+							md:px-[39px] md:grid-cols-4 md:h-fit"
+							>
+								<div
+									className="flex justify-between border border-slate-800 p-4 items-center 
+								md:flex-col md:justify-normal md:items-start md:mr-[11px]"
+								>
 									<p className="text-[8px] font-bold text-white/50 tracking-[0.73px]">
 										Rotation Time
 									</p>
@@ -115,8 +139,10 @@ const PlanetPage = () => {
 										{d.rotation}
 									</h3>
 								</div>
-								<div className="flex justify-between border border-slate-800 p-4 items-center 
-								md:flex-col md:justify-normal md:items-start md:mr-[11px]">
+								<div
+									className="flex justify-between border border-slate-800 p-4 items-center 
+								md:flex-col md:justify-normal md:items-start md:mr-[11px]"
+								>
 									<p className="text-[8px] font-bold text-white/50 tracking-[0.73px]">
 										Revolution Time
 									</p>
@@ -124,8 +150,10 @@ const PlanetPage = () => {
 										{d.revolution}
 									</h3>
 								</div>
-								<div className="flex justify-between border border-slate-800 p-4 items-center 
-								md:flex-col md:justify-normal md:items-start md:mr-[11px]">
+								<div
+									className="flex justify-between border border-slate-800 p-4 items-center 
+								md:flex-col md:justify-normal md:items-start md:mr-[11px]"
+								>
 									<p className="text-[8px] font-bold text-white/50 tracking-[0.73px]">
 										Radius
 									</p>
@@ -133,8 +161,10 @@ const PlanetPage = () => {
 										{d.radius}
 									</h3>
 								</div>
-								<div className="flex justify-between border border-slate-800 p-4 items-center 
-								md:flex-col md:justify-normal md:items-start">
+								<div
+									className="flex justify-between border border-slate-800 p-4 items-center 
+								md:flex-col md:justify-normal md:items-start"
+								>
 									<p className="text-[8px] font-bold text-white/50 tracking-[0.73px]">
 										Temperature
 									</p>
