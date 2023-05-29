@@ -24,7 +24,7 @@ const PlanetPage = () => {
 									{activeTab === 0 && (
 										<img
 											src={d.images.planet}
-											className="w-[184px]"
+											className={`w-[${d.images.size}px]`}
 										/>
 									)}
 									{activeTab === 1 && (
