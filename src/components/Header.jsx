@@ -9,7 +9,7 @@ const Header = () => {
 		setIsMenuOpen(!isMenuOpen);
 	};
 	return (
-		<header className="flex flex-col md:items-center md:border-b md:border-b-slate-800 lg:flex-row lg:justify-between">
+		<header className="flex flex-col px-6 md:px-[39px] md:items-center md:border-b md:border-b-slate-800 lg:flex-row lg:justify-between xl:px-10">
 			<div className="border-b border-b-slate-800 md:border-none">
 				<div className="flex items-center justify-between px-6 pt-4 pb-[17px] w-full">
 					<p className="text-[28px] uppercase font-normal font-['Antonio']">
@@ -36,9 +36,9 @@ const Header = () => {
 				</div>
 			</div>
 			<nav
-				className={`flex items-center px-6 ${
+				className={`flex items-center ${
 					isMenuOpen ? "h-[90vh]" : ""
-				} md:h-auto md:w-full md:justify-between md:pt-0 md:px-[39px] lg:w-fit`}
+				} md:h-auto md:w-full md:justify-between md:pt-0 lg:w-fit`}
 				aria-label="Site Navigation"
 			>
 				<ul

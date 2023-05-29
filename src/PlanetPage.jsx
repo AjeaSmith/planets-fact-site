@@ -64,13 +64,13 @@ const PlanetPage = () => {
 										activeTab === 0 ? "block" : "hidden"
 									} md:text-left`}
 								>
-									<h2 className="w-full text-H2 text-center mb-4 font-normal md:text-left">
+									<h2 className="w-full text-H2 text-center mb-4 font-normal md:text-left md:text-[48px]">
 										{name}
 									</h2>
 									<p className="mb-8 text-SB font-normal text-white/75">
 										{d.overview.content}
 									</p>
-									<p className="text-white/50">
+									<p className="text-white/50 md:text-[12px]">
 										Source :{" "}
 										<a
 											href={d.overview.source}
@@ -95,7 +95,7 @@ const PlanetPage = () => {
 									<p className="mb-8 text-SB font-normal text-white/75">
 										{d.structure.content}
 									</p>
-									<p className="text-white/50">
+									<p className="text-white/50 md:text-[12px]">
 										Source :{" "}
 										<a
 											href={d.structure.source}
@@ -120,7 +120,7 @@ const PlanetPage = () => {
 									<p className="mb-8 text-SB font-normal text-white/75">
 										{d.geology.content}
 									</p>
-									<p className="text-white/50">
+									<p className="text-white/50 md:text-[12px]">
 										Source :{" "}
 										<a
 											href={d.geology.source}
@@ -132,14 +132,14 @@ const PlanetPage = () => {
 								</div>
 							</div>
 							<div
-								className="grid gap-2 uppercase px-6 md:row-start-3 md:col-span-3 
-							md:px-[39px] md:grid-cols-4 md:h-fit xl:px-[165px]"
+								className="grid gap-2 mb-10 uppercase px-6 md:row-start-3 md:col-span-3 
+							md:px-[39px] md:grid-cols-4 md:h-fit xl:px-[165px] xl:mb-0"
 							>
 								<div
 									className="flex justify-between border border-slate-800 p-4 items-center 
 								md:flex-col md:justify-normal md:items-start md:mr-[11px] xl:mr-[30px] xl:p-8"
 								>
-									<p className="text-[8px] font-bold text-white/50 tracking-[0.73px]">
+									<p className="text-[8px] font-bold text-white/50 tracking-[0.73px] xl:text-[11px]">
 										Rotation Time
 									</p>
 									<h3 className="text-H5 font-['Antonio'] tracking-[-0.75px] md:text-[24px] md:tracking-[-0.9px] md:mt-[6px] xl:text-H2">
@@ -150,7 +150,7 @@ const PlanetPage = () => {
 									className="flex justify-between border border-slate-800 p-4 items-center 
 								md:flex-col md:justify-normal md:items-start md:mr-[11px] xl:mr-[30px] xl:p-8"
 								>
-									<p className="text-[8px] font-bold text-white/50 tracking-[0.73px]">
+									<p className="text-[8px] font-bold text-white/50 tracking-[0.73px] xl:text-[11px]">
 										Revolution Time
 									</p>
 									<h3 className="text-H5 font-['Antonio'] tracking-[-0.75px] md:text-[24px] md:tracking-[-0.9px] md:mt-[6px] xl:text-H2">
@@ -161,7 +161,7 @@ const PlanetPage = () => {
 									className="flex justify-between border border-slate-800 p-4 items-center 
 								md:flex-col md:justify-normal md:items-start md:mr-[11px] xl:mr-[30px] xl:p-8"
 								>
-									<p className="text-[8px] font-bold text-white/50 tracking-[0.73px]">
+									<p className="text-[8px] font-bold text-white/50 tracking-[0.73px] xl:text-[11px]">
 										Radius
 									</p>
 									<h3 className="text-H5 font-['Antonio'] tracking-[-0.75px] md:text-[24px] md:tracking-[-0.9px] md:mt-[6px] xl:text-H2">
@@ -172,7 +172,7 @@ const PlanetPage = () => {
 									className="flex justify-between border border-slate-800 p-4 items-center 
 								md:flex-col md:justify-normal md:items-start xl:p-8"
 								>
-									<p className="text-[8px] font-bold text-white/50 tracking-[0.73px]">
+									<p className="text-[8px] font-bold text-white/50 tracking-[0.73px] xl:text-[11px]">
 										Temperature
 									</p>
 									<h3 className="text-h5 font-['Antonio'] tracking-[-0.75px] md:text-[24px] md:tracking-[-0.9px] md:mt-[6px] xl:text-H2">

@@ -31,16 +31,6 @@ export default {
       colors: {
         'white':'#ffff',
         'blueBlack': '#070724',
-        'darkGray': '#38384F',
-        'gray': '#838391',
-        'mercury': '#419EBB',
-        'lightOrange': '#EDA249',
-        'purple': '#6f2ed6',
-        'orange': '#D14C32',
-        'red': '#D83A34',
-        'darkOrange': '#CD5120',
-        'teal': '#1ec2a4',
-        'blue': '#2d68f0',
       }
     },
   },
