@@ -41,7 +41,7 @@ const Planet = ({ data }) => {
 
 											<img
 												src={d.images.geology}
-												className="geology-img w-2/3"
+												className="geology-img w-4/12"
 											/>
 										</div>
 									)}
@@ -60,7 +60,7 @@ const Planet = ({ data }) => {
 										activeTab === 0 ? "block" : "hidden"
 									} md:text-left`}
 								>
-									<h2 className="w-full text-H2 text-center mb-4 font-normal md:text-left md:text-[48px]">
+									<h2 className="w-full text-H2 text-center mb-4 font-normal md:text-left md:text-[48px] xl:text-H1">
 										{d.name}
 									</h2>
 									<p className="mb-8 text-SB font-normal text-white/75">
@@ -85,7 +85,7 @@ const Planet = ({ data }) => {
 										activeTab === 1 ? "block" : "hidden"
 									} md:text-left`}
 								>
-									<h2 className="w-full text-H2 text-center mb-4 font-normal md:text-left">
+									<h2 className="w-full text-H2 text-center mb-4 font-normal md:text-left md:text-[48px] xl:text-H1">
 										{d.name}
 									</h2>
 									<p className="mb-8 text-SB font-normal text-white/75">
@@ -110,7 +110,7 @@ const Planet = ({ data }) => {
 										activeTab === 2 ? "block" : "hidden"
 									} md:text-left`}
 								>
-									<h2 className="w-full text-H2 text-center mb-4 font-normal md:text-left">
+									<h2 className="w-full text-H2 text-center mb-4 font-normal md:text-left md:text-[48px] xl:text-H1">
 										{d.name}
 									</h2>
 									<p className="mb-8 text-SB font-normal text-white/75">
