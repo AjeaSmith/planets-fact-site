@@ -129,7 +129,7 @@ const Planet = ({ data }) => {
 							</div>
 							<div
 								className="grid gap-2 mb-10 uppercase px-6 md:row-start-3 md:col-span-3 
-                                        md:px-[39px] md:grid-cols-4 md:h-fit xl:px-[165px] xl:mb-0"
+                                        md:px-[39px] md:grid-cols-4 md:h-fit xl:max-w-[1440px] xl:mb-0 xl:mx-auto"
 							>
 								<div
 									className="flex justify-between border border-slate-800 p-4 items-center 
