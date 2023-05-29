@@ -19,26 +19,33 @@ const PlanetPage = () => {
 								activeTab={activeTab}
 								setActiveTab={setActiveTab}
 							/>
-							<div className="flex md:col-span-3 pt-10">
+							<div className="flex md:col-span-3 my-24">
 								<div className="mx-auto">
 									{activeTab === 0 && (
 										<img
 											src={d.images.planet}
-											className={`w-[${d.images.size}px]`}
+											srcSet={`${d.images.planet} ${d.images.size}w, ${d.images.planet} ${d.images.tablet}w, ${d.images.planet} ${d.images.desktop}w`}
+											sizes={`(min-width: 768px) ${d.images.tablet}px, (min-width: 1440px) ${d.images.desktop}px, ${d.images.size}px`}
 										/>
 									)}
 									{activeTab === 1 && (
-										<img src={d.images.internal} />
+										<img
+											src={d.images.internal}
+											srcSet={`${d.images.internal} ${d.images.size}w, ${d.images.internal} ${d.images.tablet}w, ${d.images.internal} ${d.images.desktop}w`}
+											sizes={`(min-width: 768px) ${d.images.tablet}px, (min-width: 1440px) ${d.images.desktop}px, ${d.images.size}px`}
+										/>
 									)}
 									{activeTab === 2 && (
-										<div className="relative ">
+										<div className="relative">
 											<img
 												src={d.images.planet}
-												className="w-[290px]"
+												srcSet={`${d.images.planet} ${d.images.size}w, ${d.images.planet} ${d.images.tablet}w, ${d.images.planet} ${d.images.desktop}w`}
+												sizes={`(min-width: 768px) ${d.images.tablet}px, (min-width: 1440px) ${d.images.desktop}px, ${d.images.size}px`}
 											/>
+
 											<img
 												src={d.images.geology}
-												className="w-[150px] absolute top-44 left-16"
+												className="geology-img w-2/3"
 											/>
 										</div>
 									)}
@@ -60,7 +67,7 @@ const PlanetPage = () => {
 									<h2 className="w-full text-H2 text-center mb-4 font-normal md:text-left">
 										{name}
 									</h2>
-									<p className="mb-8 text-SB font-normal md:text-white/75">
+									<p className="mb-8 text-SB font-normal text-white/75">
 										{d.overview.content}
 									</p>
 									<p className="text-white/50">
@@ -85,7 +92,7 @@ const PlanetPage = () => {
 									<h2 className="w-full text-H2 text-center mb-4 font-normal md:text-left">
 										{name}
 									</h2>
-									<p className="mb-8 text-SB font-normal">
+									<p className="mb-8 text-SB font-normal text-white/75">
 										{d.structure.content}
 									</p>
 									<p className="text-white/50">
@@ -110,7 +117,7 @@ const PlanetPage = () => {
 									<h2 className="w-full text-H2 text-center mb-4 font-normal md:text-left">
 										{name}
 									</h2>
-									<p className="mb-8 text-SB font-normal">
+									<p className="mb-8 text-SB font-normal text-white/75">
 										{d.geology.content}
 									</p>
 									<p className="text-white/50">

@@ -73,6 +73,13 @@ h4 {
 	border-color: #2d68f0;
 }
 
+.geology-img {
+	position: absolute;
+	top: 90%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
 /* Custom MEDIA QUEIRES */
 @media (min-width: 767px) {
 	.planet-grid {
@@ -104,7 +111,6 @@ h4 {
 	.Neptune-bg {
 		background-color: #2d68f0;
 	}
-
 }
 @media (min-width: 1439px) {
 	/* Nav styles for desktop */
