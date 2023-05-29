@@ -8,7 +8,7 @@ const TabMenu = ({ name, activeTab, setActiveTab }) => {
 			<div
 				className="flex items-center justify-between border-b border-slate-800 px-6
 			md:col-start-2 md:row-start-2 md:flex-col 
-			md:items-stretch md:justify-normal md:px-[39px] md:border-none"
+			md:items-stretch md:justify-normal md:px-[39px] md:border-none xl:max-w-[400px] xl:px-0"
 			>
 				<button
 					className={`uppercase font-bold tracking-[1.93px] inline-block ${
